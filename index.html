@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GTG</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/heroSection.css" />
+    <link rel="stylesheet" href="./css/productSection.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- ****************************** HEADER ************************** -->
+    <header class="header">
+      <div class="header__container">
+        <!-- Logo -->
+        <div class="header__logo">
+          <a href="#">GTG</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="header__nav" id="mainNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#" class="shop__dropdown"
+                ><span>Shop</span>
+                <span
+                  ><img
+                    src="./assets/images/icons/down_arrow_icon.png"
+                    alt="Down down_arrow_icon" /></span
+              ></a>
+            </li>
+            <li><a href="#">Fragrances</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions -->
+        <div class="header__actions">
+          <button class="search-btn" aria-label="Search">
+            <img
+              src="./assets/images/icons/Magnifying_Glass_icon.png"
+              alt="Search"
+            />
+          </button>
+          <a href="#" class="btn btn--primary">Shop Now</a>
+
+          <!-- Hamburger -->
+          <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ****************************** END HEADER ************************* -->
+
+    <!-- ***************************** HERO SECTION **************************** -->
+    <section class="hero">
+      <!-- Background Image -->
+      <img
+        src="./assets/images/hero/Hero_image.png"
+        alt="GTG Perfume Hero"
+        class="hero__bg"
+      />
+
+      <!-- Overlay Content -->
+      <div class="hero__content">
+        <div class="hero__badge">
+          <img src="./assets/images/icons/Award_icon.png" alt="Award" />
+          <span>Awarded the best perfume in the world</span>
+        </div>
+
+        <h1 class="hero__title">Live your best life.</h1>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <h3>10x</h3>
+            <p>power</p>
+          </div>
+          <div class="stat">
+            <h3>9</h3>
+            <p>ingredients</p>
+          </div>
+          <div class="stat">
+            <h3>20K+</h3>
+            <p>happy customers</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn--primary hero__btn">Shop Now</a>
+      </div>
+    </section>
+    <!-- ***************************** END HERO SECTION ************************ -->
+
+    <!-- ***************************** PRODUCT SECTION ************************* -->
+    <section class="product-section">
+      <div class="product-container">
+        <!-- LEFT: Image Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img
+              id="mainProductImage"
+              src="./assets/images/products/violet_fragrance.png"
+              alt="GTG Perfume"
+            />
+
+            <button class="nav prev" aria-label="Previous image">
+              <span>←</span>
+            </button>
+            <button class="nav next" aria-label="Next image">
+              <span>→</span>
+            </button>
+
+            <!-- Dots -->
+            <div class="dots" id="galleryDots"></div>
+          </div>
+
+          <div class="thumbnail-grid">
+            <img
+              src="./assets/images/products/thumb1.jpg"
+              class="thumb active"
+            />
+            <img src="./assets/images/products/thumb2.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb3.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb4.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb1.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb2.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb3.jpg" class="thumb" />
+            <img src="./assets/images/products/thumb4.jpg" class="thumb" />
+          </div>
+        </div>
+
+        <!-- RIGHT: Product Info -->
+        <div class="product-info">
+          <h2>GTG Perfumes</h2>
+
+          <div class="rating">★★★★★ <span>4.7 (999+ reviews)</span></div>
+
+          <p class="description">
+            Experience the timeless allure backed by modern artistry, captured
+            in every bottle of our fragrance. Crafted for those who seek to
+            elevate their essence with purpose and sophistication.
+          </p>
+
+          <!-- Subscription Card -->
+          <div class="subscription-card">
+            <div class="badge">Most Popular</div>
+
+            <label class="option active">
+              <div class="option-header">
+                <div>
+                  <input type="radio" name="plan" checked />
+                  <span>Single Subscription</span>
+                </div>
+                <div class="amount">
+                  <strong>$99.99</strong>
+                  <del>$146</del>
+                </div>
+              </div>
+
+              <div class="option-content fragrance-select">
+                <p>Choose a Fragrance</p>
+
+                <div class="fragrance-options">
+                  <label class="fragrance">
+                    <div>
+                      <input type="radio" name="fragrance" checked />
+                      <span>Original</span>
+                    </div>
+
+                    <img
+                      src="./assets/images/products/original_fragrance.png"
+                    />
+
+                    <div class="best-tag">
+                      <p>BEST SELLER</p>
+                    </div>
+                  </label>
+
+                  <label class="fragrance">
+                    <div>
+                      <input type="radio" name="fragrance" />
+                      <span>Lily</span>
+                    </div>
+
+                    <img src="./assets/images//products/lily_fragrance.png" />
+                  </label>
+
+                  <label class="fragrance">
+                    <div>
+                      <input type="radio" name="fragrance" />
+                      <span>Rose</span>
+                    </div>
+                    <img src="./assets/images/products/rose_fragrance.png" />
+                  </label>
+                </div>
+
+                <div class="included">
+                  <p>What’s Included:</p>
+                  <div class="fragrance-options">
+                    <label class="fragrance include-fragrance active">
+                      <div>
+                        <input type="radio" name="include" />
+                        <span>Every 30 days</span>
+                      </div>
+
+                      <img
+                        src="./assets/images//products/original_fragrance.png"
+                      />
+                    </label>
+                    <label class="fragrance include-fragrance small">
+                      <div>
+                        <input type="radio" name="include" />
+                        <span>One time <strong>(Free)</strong></span>
+                      </div>
+
+                      <img
+                        src="./assets/images//products/original_fragrance.png"
+                      />
+                      <img src="./assets/images//products/lily_fragrance.png" />
+                      <img src="./assets/images//products/rose_fragrance.png" />
+                    </label>
+                  </div>
+                  <ul>
+                    <li>
+                      <img
+                        src="./assets/images/icons/SealCheck_icon.svg"
+                        alt=""
+                      /><span>1 Bottle Shipped Monthly</span>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/SealCheck_icon.svg"
+                        alt=""
+                      /><span
+                        ><strong>Free</strong> Sampler for Original, Lily & Rose
+                        Fragrnace</span
+                      >
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/SealCheck_icon.svg"
+                        alt=""
+                      /><span><strong>50% OFF Shipping</strong></span>
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/SealCheck_icon.svg"
+                        alt=""
+                      /><span
+                        >Pause or Cancel Anytime After 3 Months Minimum</span
+                      >
+                    </li>
+                    <li>
+                      <img
+                        src="./assets/images/icons/SealCheck_icon.svg"
+                        alt=""
+                      /><span>28-Day Money Back Guarantee*</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <label class="option secondary">
+            <div class="option-header">
+              <div>
+                <input type="radio" name="plan" />
+                <span>Double Subscription</span>
+              </div>
+              <div class="amount">
+                <strong>$169.99</strong>
+                <del>$230</del>
+              </div>
+            </div>
+
+            <div class="option-content fragrance-select">
+              <p>Choose a Fragrance 1</p>
+
+              <div class="fragrance-options">
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance1" checked />
+                    <span>Original</span>
+                  </div>
+
+                  <img src="./assets/images/products/original_fragrance.png" />
+
+                  <div class="best-tag">
+                    <p>BEST SELLER</p>
+                  </div>
+                </label>
+
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance1" />
+                    <span>Lily</span>
+                  </div>
+
+                  <img src="./assets/images//products/lily_fragrance.png" />
+                </label>
+
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance1" />
+                    <span>Rose</span>
+                  </div>
+                  <img src="./assets/images/products/rose_fragrance.png" />
+                </label>
+              </div>
+
+              <p>Choose a Fragrance 2</p>
+
+              <div class="fragrance-options">
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance2" checked />
+                    <span>Original</span>
+                  </div>
+
+                  <img src="./assets/images/products/original_fragrance.png" />
+
+                  <div class="best-tag">
+                    <p>BEST SELLER</p>
+                  </div>
+                </label>
+
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance2" />
+                    <span>Lily</span>
+                  </div>
+
+                  <img src="./assets/images//products/lily_fragrance.png" />
+                </label>
+
+                <label class="fragrance">
+                  <div>
+                    <input type="radio" name="fragrance2" />
+                    <span>Rose</span>
+                  </div>
+                  <img src="./assets/images/products/rose_fragrance.png" />
+                </label>
+              </div>
+
+              <div class="included">
+                <p>What’s Included:</p>
+                <div class="fragrance-options">
+                  <label class="fragrance include-fragrance active">
+                    <div>
+                      <input type="radio" name="include" />
+                      <span>Every 30 days</span>
+                    </div>
+
+                    <img
+                      src="./assets/images//products/original_fragrance.png"
+                    />
+                  </label>
+                  <label class="fragrance include-fragrance small">
+                    <div>
+                      <input type="radio" name="include" />
+                      <span>One time <strong>(Free)</strong></span>
+                    </div>
+
+                    <img
+                      src="./assets/images//products/original_fragrance.png"
+                    />
+                    <img src="./assets/images//products/lily_fragrance.png" />
+                    <img src="./assets/images//products/rose_fragrance.png" />
+                  </label>
+                </div>
+                <ul>
+                  <li>
+                    <img
+                      src="./assets/images/icons/SealCheck_icon.svg"
+                      alt=""
+                    /><span>1 Bottle Shipped Monthly</span>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/icons/SealCheck_icon.svg"
+                      alt=""
+                    /><span
+                      ><strong>Free</strong> Sampler for Original, Lily & Rose
+                      Fragrnace</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/icons/SealCheck_icon.svg"
+                      alt=""
+                    /><span><strong>50% OFF Shipping</strong></span>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/icons/SealCheck_icon.svg"
+                      alt=""
+                    /><span
+                      >Pause or Cancel Anytime After 3 Months Minimum</span
+                    >
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/icons/SealCheck_icon.svg"
+                      alt=""
+                    /><span>28-Day Money Back Guarantee*</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </label>
+
+          <button class="btn--primary add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- ***************************** END PRODUCT SECTION ********************* -->
+
+    <!-- JS -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>

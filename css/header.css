@@ -1,0 +1,114 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+}
+
+.header__container {
+  height: var(--header-height);
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header__logo a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Navigation */
+.header__nav ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.header__nav.active ul {
+  align-items: flex-start;
+  background-color: white;
+  margin-block-start: 0px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--color-header);
+  font-size: 1rem;
+  font-weight: thin;
+  padding: 5px 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.header__nav a:hover {
+  border-radius: 10px;
+  color: var(--color-primary-dark);
+  border-bottom: 1px solid var(--color-primary-dark);
+  transform: scale(1.1);
+}
+
+.header__nav .shop__dropdown {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Actions */
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn img {
+  width: 1.5rem;
+}
+
+.btn--primary {
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  color: var(--color-white);
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+}
+
+/* Scrolling chnage background */
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+}

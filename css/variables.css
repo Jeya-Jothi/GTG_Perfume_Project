@@ -1,0 +1,19 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+body {
+  margin: 0;
+  overflow-x: clip; /* Used for sticky */
+}
+
+:root {
+  --color-primary: #016630;
+  --color-primary-dark: #032e15;
+  --color-white: #ffffff;
+  --color-text: #1a1a1a;
+  --color-header: #162456;
+  --color-secondary: #00c950;
+
+  --header-height: 80px;
+  --container-width: 1200px;
+}
