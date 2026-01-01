@@ -210,14 +210,58 @@
   .option .amount strong {
     padding-right: 5px;
   }
-  .fragrance-select p {
-    /* font-size: 0.8rem; */
-  }
   .fragrance-options {
     gap: 5px;
   }
   .fragrance img {
     width: 30px;
     padding: 15px 20px;
+  }
+}
+
+/* Collection section */
+
+@media (max-width: 768px) {
+  .collection {
+    padding: 5% 5%;
+  }
+  .collection__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .collection__image {
+    order: -1;
+  }
+  .collection__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-body p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .collection {
+    padding: 40px 16px;
+  }
+
+  .collection__image img {
+    height: 50vh;
+  }
+
+  .collection__title {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+
+  .accordion-header {
+    font-size: 0.95rem;
+  }
+
+  .accordion-body p {
+    font-size: 0.9rem;
   }
 }

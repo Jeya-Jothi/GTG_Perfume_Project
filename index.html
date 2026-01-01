@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/heroSection.css" />
     <link rel="stylesheet" href="./css/productSection.css" />
+    <link rel="stylesheet" href="./css/collection.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -435,10 +436,79 @@
 
     <!-- ***************************** COLLECTION SECTION ********************** -->
 
+    <section class="collection">
+      <div class="collection__container">
+        <!-- LEFT -->
+        <div class="collection__content">
+          <h2 class="collection__title">Our Collection</h2>
+
+          <div class="accordion">
+            <div class="accordion-item active">
+              <button class="accordion-header">
+                <span>Signature Scents</span>
+                <span class="icon">−</span>
+              </button>
+              <div class="accordion-body">
+                <p>
+                  Discover our curated line of signature perfumes, designed to
+                  become your daily companion.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Seasonal Editions</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <p>
+                  Limited seasonal fragrances crafted to match every mood and
+                  moment.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Luxury Blends</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <p>
+                  Premium blends created using rare ingredients and timeless
+                  techniques.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                <span>Gift Collections</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-body">
+                <p>Perfectly curated gift sets for every special occasion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="collection__image">
+          <img
+            src="./assets/images/collection/collection_right_image.jpg"
+            alt="Perfume Collection"
+          />
+        </div>
+      </div>
+    </section>
+
     <!-- ***************************** END COLLECTION SECTION ******************* -->
 
     <!-- JS -->
     <script src="./js/menu.js"></script>
     <script src="./js/gallery.js"></script>
+    <script src="./js/accordion.js"></script>
   </body>
 </html>
