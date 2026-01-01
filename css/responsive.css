@@ -141,11 +141,83 @@
 }
 
 @media (max-width: 1200px) {
+  .product-gallery .main-image {
+    height: 70vh;
+  }
   .include-fragrance img {
     width: 50px;
   }
 
   .include-fragrance.small img {
     width: 30px;
+  }
+
+  .thumbnail-grid {
+    gap: 20px;
+  }
+
+  .thumb {
+    height: 100px;
+  }
+
+  .product-info h2 {
+    font-size: 2rem;
+  }
+  .badge {
+    font-size: 1rem;
+  }
+
+  .option-header {
+    font-size: 1.2rem;
+  }
+
+  .fragrance img {
+    width: 40px;
+    padding: 10px 20px;
+  }
+
+  .add-to-cart {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .included ul li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .product-container {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .fragrance img {
+    width: 50px;
+    padding: 10px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+  .product-section {
+    padding: 7% 3%;
+  }
+  .option-header {
+    font-size: 0.95rem;
+  }
+  .option .amount strong {
+    padding-right: 5px;
+  }
+  .fragrance-select p {
+    /* font-size: 0.8rem; */
+  }
+  .fragrance-options {
+    gap: 5px;
+  }
+  .fragrance img {
+    width: 30px;
+    padding: 15px 20px;
   }
 }
