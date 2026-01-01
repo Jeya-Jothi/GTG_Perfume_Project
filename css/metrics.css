@@ -1,0 +1,31 @@
+.metrics {
+  background: linear-gradient(180deg, #032e15 0%, #016630 100%);
+  padding: 3% 5%;
+  margin-top: 3%;
+}
+
+.metrics h3,
+p {
+  margin: 0;
+}
+
+.metrics__container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.metric__number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.metric__text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 300;
+}

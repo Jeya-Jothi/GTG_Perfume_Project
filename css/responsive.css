@@ -265,3 +265,54 @@
     font-size: 0.9rem;
   }
 }
+
+/* Metric section */
+/* Tablet */
+@media (max-width: 768px) {
+  .metrics__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .metric__number {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .metric__number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .metrics {
+    padding: 5% 3%;
+  }
+  .metrics__container {
+    gap: 28px;
+  }
+
+  .metric__number {
+    font-size: 2rem;
+  }
+
+  .metric__text {
+    font-size: 0.7rem;
+  }
+}
+
+/* Smallest (320px) */
+@media (max-width: 320px) {
+  .metrics__container {
+    gap: 28px;
+  }
+
+  .metric__number {
+    font-size: 1rem;
+  }
+  .metric__number {
+    font-size: 2rem;
+  }
+}
