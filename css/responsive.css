@@ -64,7 +64,8 @@
     top: 40%;
   }
   .hero__bg {
-    height: 70vh;
+    min-height: 70vh;
+    min-height: 70dvh; /* Dynamic viewport height */
     object-position: 75%;
   }
   .hero__badge {
