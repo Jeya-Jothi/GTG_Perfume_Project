@@ -5,6 +5,12 @@ This project focuses on pixel-perfect UI implementation, smooth interactions, an
 
 ---
 
+## 🔗 Live Demo
+
+https://jeya-jothi.github.io/GTG_Perfume_Project
+
+---
+
 ## Project Overview
 
 This project was developed as a frontend UI assignment to convert a provided Figma design into a real, functional webpage.  
