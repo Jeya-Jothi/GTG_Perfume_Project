@@ -126,3 +126,34 @@ th span {
 .compare__table thead th.is-highlight {
   border-bottom: 1px dotted #8bbf9c;
 }
+
+/* _______________________________________________  COMPARE SECTION RESPONSIVE ___________________________________________________________ */
+
+@media (max-width: 1024px) {
+  .btn-primary {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .compare {
+    padding: 50px 16px;
+  }
+
+  .compare__title {
+    font-size: 1.4rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+  }
+
+  .compare__title {
+    margin-bottom: 30px;
+  }
+  .compare__table th,
+  .compare__table td {
+    padding: 15px;
+  }
+}

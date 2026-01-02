@@ -233,3 +233,105 @@
 body.modal-open {
   overflow: hidden;
 }
+
+/* _______________________________________________  FOOTER SECTION RESPONSIVE ___________________________________________________________ */
+
+@media (max-width: 425px) {
+  .modal {
+    max-width: auto;
+    width: 80%;
+    padding: 20px 18px;
+  }
+  .modal h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .modal {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .footer__links {
+    gap: 10rem;
+  }
+  .footer__left {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__links,
+  .footer__left {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer__links__sub {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__newsletter {
+    justify-self: start;
+    max-width: 26rem;
+  }
+
+  .newsletter__form {
+    flex-direction: column;
+  }
+
+  .newsletter__form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer__newsletter {
+    max-width: 100%;
+  }
+
+  .footer__links,
+  .footer__left {
+    gap: 2rem;
+  }
+
+  .footer__brand h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .footer__links a,
+  .footer__social a {
+    font-size: 0.8rem;
+  }
+  .footer__social img {
+    width: 1.2rem;
+  }
+  .newsletter__title {
+    font-size: 0.9rem;
+  }
+}
+
+/* 320px SAFE */
+@media (max-width: 360px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer__brand h2 {
+    font-size: 1.6rem;
+  }
+}

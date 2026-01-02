@@ -79,3 +79,53 @@
   border-radius: 20px;
   object-fit: cover;
 }
+
+/* _______________________________________________  COLLECTION SECTION RESPONSIVE ___________________________________________________________ */
+
+@media (max-width: 768px) {
+  .collection {
+    padding: 5% 5%;
+  }
+  .collection__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .collection__image {
+    order: -1;
+  }
+  .collection__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-body p {
+    margin: 0;
+  }
+  .collection__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .collection {
+    padding: 40px 16px;
+  }
+
+  .collection__image img {
+    height: 50vh;
+  }
+
+  .collection__title {
+    font-size: 1.8rem;
+    margin-top: 0;
+  }
+
+  .accordion-header {
+    font-size: 0.95rem;
+  }
+
+  .accordion-body p {
+    font-size: 0.9rem;
+  }
+}
