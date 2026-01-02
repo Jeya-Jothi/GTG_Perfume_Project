@@ -5,7 +5,7 @@ This project focuses on pixel-perfect UI implementation, smooth interactions, an
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
 https://jeya-jothi.github.io/GTG_Perfume_Project
 
