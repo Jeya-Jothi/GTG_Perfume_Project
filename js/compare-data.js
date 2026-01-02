@@ -3,7 +3,7 @@ const comparisonData = {
     {
       id: "gtg",
       name: "GTG",
-      image: "./assets/images/compare/compare_GTA.jpg",
+      image: "./assets/images/compare/compare_GTA.webp",
       highlight: true,
       data: {
         potency: "10x",
@@ -19,7 +19,7 @@ const comparisonData = {
     {
       id: "arose",
       name: "Arose",
-      image: "./assets/images/compare/compare_arose.jpg",
+      image: "./assets/images/compare/compare_arose.webp",
       data: {
         potency: "1x",
         longevity: false,
@@ -34,7 +34,7 @@ const comparisonData = {
     {
       id: "bella",
       name: "Bella",
-      image: "./assets/images/compare/compare_bella.jpg",
+      image: "./assets/images/compare/compare_bella.webp",
       data: {
         potency: "1x",
         longevity: false,
@@ -49,7 +49,7 @@ const comparisonData = {
     {
       id: "daisies",
       name: "Daisies",
-      image: "./assets/images/compare/compare_daisies.jpg",
+      image: "./assets/images/compare/compare_daisies.webp",
       data: {
         potency: "10x",
         longevity: true,
