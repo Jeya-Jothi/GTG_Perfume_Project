@@ -86,6 +86,12 @@
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.btn--primary:hover {
+  background: linear-gradient(180deg, #016630 0%, #032e15 100%);
+  box-shadow: 0px 3px 4px #016630c5;
 }
 
 /* Hamburger */

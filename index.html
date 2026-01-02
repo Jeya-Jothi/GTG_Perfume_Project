@@ -552,6 +552,7 @@
     <!-- ****************************** COMPARE SECTION *************************** -->
 
     <section class="compare">
+      <h2 class="compare__title">---</h2>
       <h2 class="compare__title">Why GTG is the #1 Choice</h2>
 
       <div class="compare__wrapper">
@@ -575,54 +576,61 @@
         </div>
 
         <!-- Links -->
-        <div class="footer__links">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Fragrances</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+        <div class="footer__links__sub">
+          <div class="footer__left">
+            <div class="footer__links">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Fragrances</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
 
-        <!-- Social -->
-        <div class="footer__social">
-          <a href="#" aria-label="Facebook">
-            <img src="./assets/images/icons/Facebook_icon.png" alt="Facebook" />
-            <span>Facebook</span>
-          </a>
-          <a href="#" aria-label="Instagram">
-            <img
-              src="./assets/images/icons/Instagram_icon.png"
-              alt="Instagram"
-            />
-            <span>Instagram</span>
-          </a>
-          <a href="#" aria-label="X">
-            <img src="./assets/images/icons/X_icon.png" alt="X" />
-            <span>X</span>
-          </a>
-        </div>
+            <!-- Social -->
+            <div class="footer__social">
+              <a href="#" aria-label="Facebook">
+                <img
+                  src="./assets/images/icons/Facebook_icon.png"
+                  alt="Facebook"
+                />
+                <span>Facebook</span>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <img
+                  src="./assets/images/icons/Instagram_icon.png"
+                  alt="Instagram"
+                />
+                <span>Instagram</span>
+              </a>
+              <a href="#" aria-label="X">
+                <img src="./assets/images/icons/X_icon.png" alt="X" />
+                <span>X</span>
+              </a>
+            </div>
+          </div>
 
-        <!-- Newsletter -->
-        <div class="footer__newsletter">
-          <p class="newsletter__title">
-            Join our newsletter to stay up to date on features and releases.
-          </p>
+          <!-- Newsletter -->
+          <div class="footer__newsletter">
+            <p class="newsletter__title">
+              Join our newsletter to stay up to date on features and releases.
+            </p>
 
-          <form class="newsletter__form" id="newsletterForm">
-            <input type="email" placeholder="Enter your email" required />
-            <button type="submit">Subscribe</button>
-          </form>
+            <form class="newsletter__form" id="newsletterForm">
+              <input type="email" placeholder="Enter your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
 
-          <p class="newsletter__note">
-            By subscribing you agree to our
-            <a href="#">Privacy Policy</a> and provide consent to receive
-            updates from our company.
-          </p>
+            <p class="newsletter__note">
+              By subscribing you agree to our
+              <a href="#">Privacy Policy</a> and provide consent to receive
+              updates from our company.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
@@ -631,7 +639,8 @@
     <div class="modal-overlay" id="successModal">
       <div class="modal">
         <button class="modal-close" id="closeModal">&times;</button>
-        <h3>Subscription Successful 🎉</h3>
+        <span class="icon icon--filled sub-suc">✓</span>
+        <h3>Subscription Successful</h3>
         <p>
           Thank you for subscribing! You’ll now receive updates, offers, and
           product launches from GTG.

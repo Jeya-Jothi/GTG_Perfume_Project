@@ -28,11 +28,20 @@
   font-size: 0.95rem;
 }
 
+th span {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
 .compare__table th:first-child,
 .compare__table td:first-child {
   text-align: left;
   font-weight: 500;
   color: #555;
+}
+.quantity {
+  font-weight: 700 !important;
+  color: black !important;
 }
 
 .compare__brand {
@@ -43,10 +52,11 @@
 }
 
 .compare__brand img {
-  width: 56px;
-  height: 56px;
+  width: 110px;
+  height: 100px;
   border-radius: 14px;
   object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .is-highlight {
@@ -84,16 +94,27 @@
   padding: 14px 36px;
   border-radius: 999px;
   background: linear-gradient(180deg, #032e15 0%, #016630 100%);
-
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.5s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(180deg, #016630 0%, #032e15 100%);
+  box-shadow: 0px 4px 8px #016630c5;
 }
 
 /* Highlighted GTG column */
 .is-highlight {
   background: #f1fff6;
   position: relative;
+}
+
+.is-highlight span {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
 /* Horizontal dotted separators INSIDE GTG column */
@@ -104,19 +125,4 @@
 /* Header bottom dotted line */
 .compare__table thead th.is-highlight {
   border-bottom: 1px dotted #8bbf9c;
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .compare {
-    padding: 60px 16px;
-  }
-
-  .compare__title {
-    font-size: 1.4rem;
-  }
-
-  .btn-primary {
-    width: 100%;
-  }
 }

@@ -78,7 +78,7 @@ const comparisonData = {
 const table = document.getElementById("compareTable");
 
 /* Header */
-let thead = `<thead><tr><th>Qualities</th>`;
+let thead = `<thead><tr><th class="quantity">Qualities</th>`;
 comparisonData.brands.forEach((brand) => {
   thead += `
     <th class="${brand.highlight ? "is-highlight" : ""}">

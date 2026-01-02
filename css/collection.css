@@ -63,8 +63,13 @@
   padding-top: 10px;
 }
 
+.accordion-item .icon {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
 .accordion-item.active .icon {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 /* IMAGE */
